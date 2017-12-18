@@ -1,0 +1,23 @@
+[package]
+name = "shotgun"
+version = "0.1.0"
+authors = ["main() <main@ehvag.de>"]
+
+[dependencies]
+vulkano = "0.7"
+vulkano-shader-derive = "0.7"
+vulkano-win = "0.7"
+cgmath = "0.15.0"
+image = "0.17.0"
+winit = "0.9.0"
+time = "0.1.38"
+screenshot = { path = "screenshot-rs" }
+cfg-if = "0.1"
+
+[features]
+sway = []
+
+[replace]
+"vulkano:0.7.2" = { git = "https://github.com/main--/vulkano.git", branch = "patch-1" }
+"vulkano-win:0.7.2" = { git = "https://github.com/main--/vulkano.git", branch = "patch-1" }
+"vulkano-shader-derive:0.7.2" = { git = "https://github.com/main--/vulkano.git", branch = "patch-1" }
